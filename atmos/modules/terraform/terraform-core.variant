@@ -220,8 +220,7 @@ job "terraform provider override" {
       <<-EOS
       provider:
         aws:
-          - region: "${opt.region}"
-            assume_role:
+          - assume_role:
               role_arn: "${opt.role}"
       EOS
     ,
